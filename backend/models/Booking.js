@@ -31,7 +31,4 @@ const bookingSchema = new mongoose.Schema({
   timestamps: true
 });
 
-// Index for faster queries
-bookingSchema.index({ seatId: 1 });
-
 module.exports = mongoose.model('Booking', bookingSchema);
