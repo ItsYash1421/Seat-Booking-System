@@ -58,7 +58,7 @@ This is a technical assessment project for **GreenStitch Technologies** that imp
    The backend `.env` file is already configured with the MongoDB connection:
    ```
    PORT=5000
-   MONGO_URI=mongodb+srv://yashamanmeena1:J5emIcPwHS25hLhd@stayfinder-admin.qtfwbs2.mongodb.net/seatbooking
+   MONGO_URI=mongodb+srv://yashamanmeena1:
    NODE_ENV=development
    ```
 
