@@ -7,8 +7,17 @@ const bookingRoutes = require('./routes/bookings');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// CORS Configuration
+const corsOptions = {
+    origin: process.env.NODE_ENV === 'production'
+        ? process.env.ALLOWED_ORIGINS?.split(',') || '*'
+        : '*',
+    credentials: true,
+    optionsSuccessStatus: 200
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
